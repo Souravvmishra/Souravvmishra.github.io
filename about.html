@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="bg-gray-600">
+    <div class="w-full h-full">
+      <div id="btn1" class="absolute top-10 left-6 sm:left-14 mr-8 mb-0 z-50 transition-all">
+        <a  href="./index.html">
+        <div
+          class=" btn1 bg-gray-500 hover:bg-gray-700 hover:outline outline-offset-4 outline-2 outline-red-400 text-white font-semibold rounded-lg shadow-md px-4 py-2 border-1  border-gray-400"
+        >
+          <i class="fa-sharp fa-solid fa-caret-left"></i> Home
+        </div>
+    </a>
+        
+      </div>
+    </div>
+
+    <script>
+        let btn = document.getElementsByClassName("btn1")
+
+        btn.addEventListener("click", ()=>{
+         this.classList.add("-left-24")
+        })
+        btn.addEventListener("click", ()=>{
+         this.classList.remove("-left-24")
+
+            
+        })
+
+    </script>
+
+    <div class="w-full h-full">
+        <div class="absolute top-10 right-0 sm:right-14 mr-8 mb-0 z-10">
+          <a  href="./index.html">
+          <div
+            class=" btn1 bg-gray-500 hover:bg-gray-700 hover:outline outline-offset-4 outline-2 outline-red-400 text-white font-semibold rounded-lg shadow-md px-4 py-2 border-1  border-gray-400"
+          > Projects
+            <i class="fa-sharp fa-solid fa-caret-right"></i>
+          </div>
+      </a>
+         
+        </div>
+      </div>
+
+    <div
+      class="h-[100vh] relative font-mono flex xl:flex-row flex-col items-center justify-between"
+    >
+      <!-- right Div  -->
+
+      <div
+        class=" xl:w-[50%] xl:h-[100vh]  flex flex-col items-center px-8 sm:px-24 text-white "
+      >
+        <div class="font-[satisfy] self-start text-5xl mt-24 py-4 bg-purple-800 rounded-[40%] px-5 mb-4 text-white ">Hello</div>
+        <div class="mx-auto pb-8 text-justify">
+          My name is Sourav Mishra. I am Web & App Developer who is currently
+          pursuing BCA from GGM Science College, Jammu. I have worked & still
+          working with people from all around India. Basically, I'm From Bihar
+          but brought up in different parts of India (Cuz Of Dad's Job) which
+          includes Himachal, Punjab, Chandigarh, & obviously Jammu. I have also
+          spent some months in Kolkata & Mumbai. In a Nutshell, I have seen
+          diverse culture & met different types of people which Developed my
+          mindset to different levels.
+        </div>
+
+        <div class="pb-8 text-justify">
+          From Very early, I had keen interest in coding related thing & as a
+          result I am here, working as a developer. Just a fact that I wrote my
+          first line of code when I was just 15 & at 17 I made my first program to
+          solve my own real world problem. (Checkout In Projects)
+        </div>
+        <div class=" text-justify">
+          I am very friendly by Nature yet very hard working (actually smart
+          working). I gurantee You'll love working with meh. See You in The
+          Inbox.
+        </div>
+      </div>
+      
+
+      <!-- Left Div  -->
+      <div class="relative my-40 bottom-8 sm:my-64 sm:pb-80 xl:pb-24 sm:w-72 w-52 xl:w-[40%] flex items-center ">
+        <div class="absolute shadow-md shadow-white  z-10">
+          <img
+            class="xl:h-96 xl:w-96 sm:w-72  border-2  border-gray-900"
+            src="./about_pic.jpeg"
+            alt=""
+            srcset=""
+          />
+        </div>
+
+        <div class="absolute shadow shadow-white   h-52 w-52 sm:w-72 sm:h-72 bg-black border-2 xl:h-96 xl:w-96 -left-10 -top-12 sm:-left-24 sm:-top-20">
+          <div
+            class="absolute h-6 w-6 bg-white top-0 left-0 border-white border-2"
+          ></div>
+
+          <div class="absolute bottom-0 text-base xl:text-3xl text-white px-6">
+            <div class="tracking-widest italic">
+              <span>Sourav </span>
+              <span class="font-semibold">Mishra</span>
+            </div>
+            <br />
+            <span class="tracking-[6px] xl:text-base absolute text-sm bottom-2 xl:bottom-4"
+              >&lt;DEVELOPER&gt;</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
